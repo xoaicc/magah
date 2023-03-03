@@ -1,3 +1,33 @@
+html {
+    font-size: 16px;
+}
+
 body {
     margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+h4 {
+    font-size: .9rem;
 }

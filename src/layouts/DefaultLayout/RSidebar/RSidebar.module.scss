@@ -1,0 +1,48 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(242, 51, 51, 0.75);
+  border-radius: 20px;
+  box-shadow: rgba(242, 51, 51, 0.75) 3px 3px 10px;
+  text-align: center;
+}
+
+.user-container {
+  height: 130px;
+  width: 100%;
+  display: flex;
+  padding: 10px;
+
+  .avatar-wrapper {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.75) 3px 3px 10px;
+  }
+
+  .info-wrapper {
+    margin-left: 10px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 20px;
+    text-align: left;
+    padding: 10px;
+  }
+}
+
+.func-container {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.indBook-container {
+  height: calc(100% - 130px - 60px);
+  width: 100%;
+  padding: 10px;
+}
