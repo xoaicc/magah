@@ -5,14 +5,14 @@ function Menu() {
     const icon = "▶";
 
     const menu = {
-        item1: {name: "Trang chủ", sep: true},
-        item2: {name: "Thể loại", icon: icon, sep: true},
-        item3: {name: "Trạng thái", icon: icon, sep: true},
-        item4: {name: "Xếp hạng", sep: true},
-        item5: {name: "Lịch trình", icon: icon, sep: true},
-        item6: {name: "Cộng đồng", sep: true},
-        item7: {name: "Ủng hộ", sep: true},
-        item8: {name: "Liên hệ", sep: true}
+        item1: {name: "Trang chủ"},
+        item2: {name: "Thể loại", icon: icon},
+        item3: {name: "Trạng thái", icon: icon},
+        item4: {name: "Xếp hạng"},
+        item5: {name: "Lịch trình", icon: icon},
+        item6: {name: "Cộng đồng"},
+        item7: {name: "Ủng hộ"},
+        item8: {name: "Liên hệ"}
     }
 
     return (

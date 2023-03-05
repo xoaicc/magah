@@ -1,9 +1,21 @@
 import styles from "./RSidebar.module.scss";
 import avatar from "../../../assets/Avatar/XoaiCC.jpg"
 import FuncButton from "../../../components/Button/FuncButton";
+import VecBookList from "../../../components/BookList/VecBookList";
 
 function RSidebar() {
     const funcIcons = ["💡", "🔔", "👤", "⚙", "❌"];
+
+    const tabs = document.querySelectorAll(".tab");
+
+    tabs.forEach(tab => {
+        tab.addEventListener("click", () => {
+            tabs.forEach(tab => {
+                tab.classList.remove(styles["active"]);
+            });
+            tab.classList.add(styles["active"]);
+        })
+    })
 
     return (
         <div className={styles["wrapper"]}>
@@ -22,8 +34,19 @@ function RSidebar() {
                 ))}
             </div>
             <div className={styles["indBook-container"]}>
-                <div className={styles["tabBar"]}></div>
-                <div className={styles["tabContent"]}></div>
+                <div className={styles["tabBar"]}>
+                    <div id="tab1" className={styles["tab"] + " " + styles["active"]}>
+                        <h4 className={styles["titleBar"]}>Đang theo dõi</h4>
+                        <h3 className={styles["icon-wrapper"]}>❤</h3>
+                    </div>
+                    <div id="tab2" className={styles["tab"]}>
+                        <h4 className={styles["titleBar"]}>Đang theo dõi</h4>
+                        <h3 className={styles["icon-wrapper"]}>🔖</h3>
+                    </div>
+                </div>
+                <div className={styles["tabContent"]}>
+                    <VecBookList />
+                </div>
             </div>
         </div>
     )

@@ -14,7 +14,8 @@ function LSidebar() {
             <div className={styles["menu-container"]}>
                 <Menu />
             </div>
-            <div className={styles["fanpage-container"]}></div>
+            <div className={styles["fanpage-container"]}>
+            </div>
             <div className={styles["copyright"]}>
                 <p>© 2023 by XoaiCC. All Rights Reserved.</p>
             </div>

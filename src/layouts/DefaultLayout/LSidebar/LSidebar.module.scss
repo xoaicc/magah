@@ -1,6 +1,9 @@
 .wrapper {
-  height: 100%;
+  height: calc(100vh - 20px);
   width: 100%;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 10px;
   display: flex;
   flex-direction: column;
   background-color: rgba(242, 51, 51, 0.75);
@@ -10,17 +13,21 @@
 }
 
 .logo-container {
+  padding: 10px 10px 5px 10px;
   height: 130px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .search-container {
-  height: 60px;
+  height: 50px;
   width: 100%;
   padding: 5px 10px;
 
   .searchBar {
-    height: 50px;
+    height: 40px;
     width: 100%;
     border-radius: 20px;
     border: none;
@@ -35,7 +42,7 @@
 }
 
 .menu-container {
-  height: 490px;
+  height: 330px;
   width: 100%;
   padding: 5px 10px;
 }
@@ -43,9 +50,16 @@
 .fanpage-container {
   height: 135px;
   width: 100%;
+  padding: 5px 10px;
+  overflow: clip;
+
+  .fanpage-wrapper {
+    border-radius: 20px;
+  }
 }
 
 .copyright {
+  padding: 5px 10px 10px 10px;
   width: 100%;
   margin-top: auto;
 }

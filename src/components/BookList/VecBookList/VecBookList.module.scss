@@ -1,7 +1,7 @@
 .wrapper {
-  margin-top: auto;
-  height: 220px;
+  height: 100%;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.75);
   border-radius: 20px;
+  overflow: auto;
 }
