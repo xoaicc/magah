@@ -1,7 +1,7 @@
 import styles from "./RSidebar.module.scss";
-import avatar from "../../../assets/Avatar/XoaiCC.jpg"
+import avatar from "../../../assets/Avatar/XoaiCC.jpg";
 import FuncButton from "../../../components/Button/FuncButton";
-import VecBookList from "../../../components/BookList/VecBookList";
+import BookList from "../../../components/BookList";
 
 function RSidebar() {
     const funcIcons = ["💡", "🔔", "👤", "⚙", "❌"];
@@ -15,7 +15,7 @@ function RSidebar() {
             });
             tab.classList.add(styles["active"]);
         })
-    })
+    });
 
     return (
         <div className={styles["wrapper"]}>
@@ -45,7 +45,7 @@ function RSidebar() {
                     </div>
                 </div>
                 <div className={styles["tabContent"]}>
-                    <VecBookList />
+                    <BookList type={2} />
                 </div>
             </div>
         </div>

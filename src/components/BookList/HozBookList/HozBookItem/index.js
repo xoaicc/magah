@@ -1,17 +1,18 @@
-import styles from "./HozBookItem.scss";
-import book from "../../../../assets/Book/manga_demo.jpg"
+import styles from "./HozBookItem.module.scss";
 
-function HozBookItem() {
+function HozBookItem(props) {
     return (
         <div className={styles["wrapper"]}>
-            <div className={styles["bookCover"]}>
-                <img src={ book } alt="Book cover" />
-                <h3 className={styles["bookTitle"]}>A</h3>
-                <div className={styles["bookStats"]}>
-                    <div className={styles["bookStat"]}>
-                        <h3 className={styles["statIcon"]}>👀</h3>
-                        <h4 className={styles["statCount"]}>500M</h4>
-                    </div>
+            <img className={styles["bookCover"]} src={props.cover} alt="Book cover" />
+            <h3 className={styles["bookTitle"]}>{props.title}</h3>
+            <div className={styles["bookStats"]}>
+                <div className={styles["bookStat"]}>
+                    <h4 className={styles["statIcon"]}>👀</h4>
+                    <h4 className={styles["statCount"]}>{props.view}</h4>
+                </div>
+                <div className={styles["bookStat"]}>
+                    <h4 className={styles["statIcon"]}>❤</h4>
+                    <h4 className={styles["statCount"]}>{props.follow}</h4>
                 </div>
             </div>
         </div>

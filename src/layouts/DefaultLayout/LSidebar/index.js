@@ -1,11 +1,12 @@
 import styles from "./LSidebar.module.scss";
+import image from "../../../assets/Logo/magah-logo.png";
 import Menu from "../../../components/Menu";
 
 function LSidebar() {
     return (
         <div className={styles["wrapper"]}>
             <div className={styles["logo-container"]}>
-                <h1>Magah!</h1>
+                <img className={styles["logo"]} src={ image } alt="Logo" />
                 <h4>Không gian cho người yêu truyện</h4>
             </div>
             <div className={styles["search-container"]}>
