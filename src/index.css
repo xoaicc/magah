@@ -1,9 +1,7 @@
-html {
-    font-size: 16px;
-}
+@import "~@flaticon/flaticon-uicons/css/all/all";
 
-body::-webkit-scrollbar {
-    display: none;
+html {
+    font-size: 14px;
 }
 
 * {
@@ -27,23 +25,68 @@ body::-webkit-scrollbar {
     background-color: rgba(0, 0, 0, 0);
 }
 
-h1, h2, h3, h4 {
-    text-transform: uppercase;
+@font-face {
+    font-family: "000 Blambot Pro Lite TB";
+    src: url("assets/fonts/Blambot-Pro-Lite-TB.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "000 CCMonologous [TeddyBear]";
+    src: url("assets/fonts/CCMonologou-TB.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "HL-Comicboom-Unicode";
+    src: url("assets/fonts/HLcomicboom-Uni.ttf") format("truetype");
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+h1, h2 {
+    font-family: "HL-Comicboom-Unicode", serif;
+    letter-spacing: 1px;
+}
+
+h3, h4 {
+    font-family: "000 CCMonologous [TeddyBear]", serif;
 }
 
 h1 {
-    font-size: 1.5rem;
-    font-weight: 800;
+    font-size: 1.6rem;
 }
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
 }
 
 h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
-h4 {
-    font-size: .9rem;
+p {
+    font-family: "000 Blambot Pro Lite TB", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-style: oblique;
+}
+
+i {
+    font-size: 1.3rem;
+    line-height: 0;
+}
+
+button, input, [tabindex] {
+    font-family: "000 CCMonologous [TeddyBear]", serif;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+input {
+    font-family: "000 Blambot Pro Lite TB", serif;
 }

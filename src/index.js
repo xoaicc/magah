@@ -1,10 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from "react-dom/client";
+import "./index.css";
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const rootContainer = document.getElementById("root");
+rootContainer.addEventListener("contextmenu", event => event.preventDefault());
+rootContainer.addEventListener("copy", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+});
+rootContainer.oncut = function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+}
+rootContainer.onpaste = function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+}
+rootContainer.onkeydown = function(e) {
+    if (e.keyCode === 123) {
+        e.preventDefault();
+        return false;
+    }
+};
+rootContainer.style.userSelect = "none";
+rootContainer.style.msUserSelect = "none";
+rootContainer.style.mozUserSelect = "none";
+rootContainer.style.khtmlUserSelect = "none";
+
+const root = ReactDOM.createRoot(rootContainer);
 root.render(
   <React.StrictMode>
     <App />

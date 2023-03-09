@@ -1,7 +1,7 @@
 import styles from "./Banner.module.scss";
-import top1Book from "../../assets/Book/Top-1.jpg";
-import top2Book from "../../assets/Book/Top-2.jpg";
-import top3Book from "../../assets/Book/Top-3.jpg";
+import top1Book from "../../assets/books/Top-1.jpg";
+import top2Book from "../../assets/books/Top-2.jpg";
+import top3Book from "../../assets/books/Top-3.jpg";
 
 function Banner() {
     return (

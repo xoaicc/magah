@@ -5,7 +5,7 @@ function HozBookList(props) {
     return (
         <div className={styles["wrapper"]}>
             {props.list.map((book, i) =>
-            <HozBookItem key={i} cover={book.bookCover.image} title={book.bookTitle} view={book.bookView} follow={book.bookFollow} />)}
+            <HozBookItem key={i} end={i+1 === props.list.length} cover={book.bookCover.image} title={book.bookTitle} view={book.bookView} follow={book.bookFollow} />)}
         </div>
     )
 }

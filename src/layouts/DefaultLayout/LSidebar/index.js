@@ -1,5 +1,5 @@
 import styles from "./LSidebar.module.scss";
-import image from "../../../assets/Logo/magah-logo.png";
+import image from "../../../assets/logo/magah-logo.png";
 import Menu from "../../../components/Menu";
 
 function LSidebar() {
@@ -18,7 +18,7 @@ function LSidebar() {
             <div className={styles["fanpage-container"]}>
             </div>
             <div className={styles["copyright"]}>
-                <p>© 2023 by XoaiCC. All Rights Reserved.</p>
+                <p>Developed with ❤ by <a href="https://xoaicc.xcc.one">XoaiCC</a>. Uicons by <a href="https://www.flaticon.com/uicons">Flaticon</a></p>
             </div>
         </div>
     )
