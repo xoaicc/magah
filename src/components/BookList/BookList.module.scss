@@ -4,8 +4,8 @@
   position: relative;
   margin-bottom: 10px;
   border-radius: 20px;
-  background-color: rgba(242, 51, 51, 0.5);
-  box-shadow: rgba(242, 51, 51, 0.75) 3px 3px 10px;
+  background-color: var(--color-red-2);
+  box-shadow: var(--color-red-3) 3px 3px 10px;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   z-index: 2;
@@ -18,24 +18,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: solid rgba(255, 255, 255, 0.5) 1px;
+    border-bottom: solid var(--color-white-3) 1px;
 
     h2 {
-      color: rgba(255, 255, 255, 1);
-    }
-
-    .listButton {
-      height: 40px;
-      aspect-ratio: 1 / 1;
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      background-color: rgba(255, 255, 255, 0.75);
-      border-radius: 50%;
+      color: var(--color-white-4);
     }
   }
 
@@ -55,16 +41,15 @@
       transform: scale(1);
       will-change: transform;
       user-select: none;
-      cursor: pointer;
 
-      .active {
+      &:active {
         cursor: grabbing;
-        transform: scale(1.1);
+        transform: scale(1.01);
       }
-    }
 
-    .listContent-wrapper::-webkit-scrollbar {
-      display: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   }
 }

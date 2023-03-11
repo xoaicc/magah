@@ -8,65 +8,65 @@
   flex-direction: column;
   border-radius: 20px;
   text-align: center;
-  background-color: rgba(242, 51, 51, 0.5);
-  box-shadow: rgba(242, 51, 51, 0.75) 3px 3px 10px;
+  background-color: var(--color-red-2);
+  box-shadow: var(--color-red-3) 3px 3px 10px;
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-}
 
-.logo-container {
-  padding: 10px 10px 5px 10px;
-  height: 130px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  .logo {
-    height: 80px;
-    width: 222px;
-  }
-}
-
-.search-container {
-  height: 50px;
-  width: 100%;
-  padding: 5px 10px;
-
-  .searchBar {
-    height: 40px;
+  .logo-container {
+    padding: 10px 10px 5px 10px;
+    height: 130px;
     width: 100%;
-    border-radius: 20px;
-    border: none;
-    padding: 10px;
-    background-color: rgb(255, 255, 255, 0.75);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+      width: 100%;
+      align-items: 1 / 2.775;
+    }
   }
 
-  .searchBar:focus-visible {
-    outline: none;
+  .search-container {
+    height: 50px;
+    width: 100%;
+    padding: 5px 10px;
+
+    .searchBar {
+      height: 40px;
+      width: 100%;
+      border-radius: 20px;
+      border: none;
+      padding: 10px;
+      background-color: var(--color-white-3);
+    }
+
+    .searchBar:focus-visible {
+      outline: none;
+    }
   }
-}
 
-.menu-container {
-  height: 330px;
-  width: 100%;
-  padding: 5px 10px;
-}
-
-.fanpage-container {
-  height: 135px;
-  width: 100%;
-  padding: 5px 10px;
-  overflow: clip;
-
-  .fanpage-wrapper {
-    border-radius: 20px;
+  .menu-container {
+    height: 330px;
+    width: 100%;
+    padding: 5px 10px;
   }
-}
 
-.copyright {
-  padding: 5px 10px 10px 10px;
-  width: 100%;
-  margin-top: auto;
+  .fanpage-container {
+    height: 135px;
+    width: 100%;
+    padding: 5px 10px;
+    overflow: clip;
+
+    .fanpage-wrapper {
+      border-radius: 20px;
+    }
+  }
+
+  .copyright {
+    padding: 5px 10px 10px 10px;
+    width: 100%;
+    margin-top: auto;
+  }
 }

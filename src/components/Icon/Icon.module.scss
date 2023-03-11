@@ -1,0 +1,42 @@
+.wrapper {
+  margin: 5px;
+  height: calc(100% - 10px);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.link {
+  cursor: pointer;
+}
+
+.float {
+  position: absolute;
+  top: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.red-white {
+  background-color: var(--color-red-2);
+  color: var(--color-white-3);
+}
+
+.red-white2 {
+  background-color: var(--color-red-2);
+  color: var(--color-white-4);
+}
+
+.white-red {
+  background-color: var(--color-white-3);
+  color: var(--color-red-3);
+}

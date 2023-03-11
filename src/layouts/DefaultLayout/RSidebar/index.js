@@ -1,7 +1,7 @@
 import styles from "./RSidebar.module.scss";
 import avatar from "../../../assets/avatars/XoaiCC.jpg";
-import FuncButton from "../../../components/Button/FuncButton";
 import BookList from "../../../components/BookList";
+import Icon from "../../../components/Icon";
 
 function RSidebar() {
     const funcIcons = [
@@ -26,7 +26,9 @@ function RSidebar() {
     return (
         <div className={styles["wrapper"]}>
             <div className={styles["user-container"]}>
-                <img className={styles["avatar-wrapper"]} src={avatar} alt={"Avatar"}/>
+                <div className={styles["avatar-wrapper"]}>
+                    <img src={avatar} alt={"Avatar"}/>
+                </div>
                 <div className={styles["info-wrapper"]}>
                     <p>👤 XoaiCC<br />
                         🎭 Nam<br />
@@ -36,22 +38,22 @@ function RSidebar() {
             </div>
             <div className={styles["func-container"]}>
                 {funcIcons.map((funcIcon, i) => (
-                    <FuncButton key={i} icon={funcIcon} />
+                    <Icon key={i} type={2}>{funcIcon}</Icon>
                 ))}
             </div>
             <div className={styles["indBook-container"]}>
                 <div className={styles["tabBar"]}>
                     <div id="tab1" className={styles["tab"] + " " + styles["active"]}>
                         <h4 className={styles["titleBar"]}>Đang t.dõi</h4>
-                        <div className={styles["icon-wrapper"]}>
+                        <Icon type={3}>
                             <i className="fi fi-br-heart"></i>
-                        </div>
+                        </Icon>
                     </div>
                     <div id="tab2" className={styles["tab"]}>
                         <h4 className={styles["titleBar"]}>Đang đọc</h4>
-                        <div className={styles["icon-wrapper"]}>
+                        <Icon type={1}>
                             <i className="fi fi-br-bookmark"></i>
-                        </div>
+                        </Icon>
                     </div>
                 </div>
                 <div className={styles["tabContent"]}>

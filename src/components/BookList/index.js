@@ -1,6 +1,7 @@
 import styles from "./BookList.module.scss";
 import HozBookList from "./HozBookList";
 import VecBookList from "./VecBookList";
+import Icon from "../Icon";
 
 function BookList(props) {
     if (props.type === 1) {
@@ -10,21 +11,18 @@ function BookList(props) {
 
         const whenMouseDown = (e) => {
             isDown = true;
-            e.currentTarget.classList.add(styles["active"]);
             startX = e.pageX - e.currentTarget.offsetLeft;
             scrollLeft = e.currentTarget.scrollLeft;
         };
 
-        const whenMouseLeave = (e) => {
+        const whenMouseLeave = () => {
             isDown = false;
             document.removeEventListener("mouseup", whenMouseUp);
-            e.currentTarget.classList.remove(styles["active"]);
         };
 
-        const whenMouseUp = (e) => {
+        const whenMouseUp = () => {
             isDown = false;
             document.removeEventListener("mouseup", whenMouseUp);
-            e.currentTarget.classList.remove(styles["active"]);
         };
 
         const whenMouseMove = (e) => {
@@ -39,9 +37,9 @@ function BookList(props) {
             <div className={styles["wrapper"]}>
                 <div className={styles["listSubject"]}>
                     <h2>{props.subject}</h2>
-                    <div className={styles["listButton"]}>
+                    <Icon type={2} right={true}>
                         <i className="fi fi-br-plus"></i>
-                    </div>
+                    </Icon>
                 </div>
                 <div className={styles["listContent-container"]}>
                     <div

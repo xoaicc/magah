@@ -1,4 +1,5 @@
 import styles from "./HozBookItem.module.scss";
+import Icon from "../../../Icon";
 
 function HozBookItem(props) {
     let myStyles = styles["wrapper"];
@@ -11,15 +12,15 @@ function HozBookItem(props) {
             <h3 className={styles["bookTitle"]}>{props.title}</h3>
             <div className={styles["bookStats"]}>
                 <div className={styles["bookStat"]}>
-                    <div className={styles["statIcon"]}>
+                    <Icon type={1}>
                         <i className="fi fi-br-eye"></i>
-                    </div>
+                    </Icon>
                     <h4 className={styles["statCount"]}>{props.view}</h4>
                 </div>
                 <div className={styles["bookStat"]}>
-                    <div className={styles["statIcon"]}>
+                    <Icon type={1}>
                         <i className="fi fi-br-heart"></i>
-                    </div>
+                    </Icon>
                     <h4 className={styles["statCount"]}>{props.follow}</h4>
                 </div>
             </div>

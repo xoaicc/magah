@@ -3,7 +3,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  border-bottom: solid rgba(242, 51, 51, 0.5) 1px;
+  border-bottom: solid var(--color-red-2) 1px;
 
   .bookCover {
     padding: 10px;
