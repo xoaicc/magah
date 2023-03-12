@@ -12,13 +12,13 @@ function HozBookItem(props) {
             <h3 className={styles["bookTitle"]}>{props.title}</h3>
             <div className={styles["bookStats"]}>
                 <div className={styles["bookStat"]}>
-                    <Icon type={1}>
+                    <Icon type={3}>
                         <i className="fi fi-br-eye"></i>
                     </Icon>
                     <h4 className={styles["statCount"]}>{props.view}</h4>
                 </div>
                 <div className={styles["bookStat"]}>
-                    <Icon type={1}>
+                    <Icon type={3}>
                         <i className="fi fi-br-heart"></i>
                     </Icon>
                     <h4 className={styles["statCount"]}>{props.follow}</h4>

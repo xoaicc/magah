@@ -1,7 +1,8 @@
-import styles from './DefaultLayout.module.scss'
-import LSidebar from "./LSidebar";
-import RSidebar from "./RSidebar";
+import styles from './FullLayout.module.scss'
+import LSidebar from "../../components/SideBar/LSidebar";
+import RSidebar from "../../components/SideBar/RSidebar";
 import Banner from "../../components/Banner";
+import BrowsingBar from "../../components/BrowsingBar";
 
 function DefaultLayout({children}) {
     return (
@@ -20,6 +21,7 @@ function DefaultLayout({children}) {
                     <RSidebar />
                 </div>
             </div>
+            <BrowsingBar />
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import styles from "./LSidebar.module.scss";
 import image from "../../../assets/logo/magah-logo.png";
-import Menu from "../../../components/Menu";
+import Menu from "../../Menu";
 
 function LSidebar() {
     return (

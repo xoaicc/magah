@@ -1,7 +1,7 @@
 import styles from "./RSidebar.module.scss";
 import avatar from "../../../assets/avatars/XoaiCC.jpg";
-import BookList from "../../../components/BookList";
-import Icon from "../../../components/Icon";
+import BookList from "../../BookList";
+import Icon from "../../Icon";
 
 function RSidebar() {
     const funcIcons = [
